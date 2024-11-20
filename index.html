@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Landing Page con Tailwind CSS</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configuración de Tailwind CSS -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0D3B66',
+            secondary: '#FAF0CA',
+          },
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
+  <!-- Encabezado -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-orange-300">🇸</div>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-800 hover:text-primary">Inicio</a>
+        <a href="#" class="text-gray-800 hover:text-primary">Características</a>
+        <a href="#" class="text-gray-800 hover:text-primary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Héroe -->
+  <section class="bg-red-300">
+    <div class="container mx-auto px-6 py-16 text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Bienvenido a mi Pagina Principal</h1>
+      <p class="text-gray-700 mb-8">Por Sergio Hurtado </p>
+      <a href="#" class="bg-amber-300  px-6 py-3 rounded-full hover:bg-white text-gray-800">Comenzar</a>
+    </div>
+  </section>
+
+  <!-- Sección de Características -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800">Mis Proyectos</h2>
+      <p class="text-gray-600 mt-4">Lo que nos hace diferentes.</p>
+    </div>
+    <div class="flex flex-wrap -mx-6">
+      <!-- Característica 1 -->
+      <div class="w-full md:w-1/3 px-6 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="mb-4">
+            <!-- Icono -->
+            <svg class="w-12 h-12 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 4v16m8-8H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Práctica 2</h3>
+      <p class="text-gray-600 mb-4">Descripción breve del proyecto.</p>
+      <a href="https://sergiohurtadopozo.github.io/Practica2/" target="_blank" class="text-primary hover:text-blue-800">Ver Proyecto</a>
+        </div>
+      </div>
+      <!-- Característica 2 -->
+      <div class="w-full md:w-1/3 px-6 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="mb-4">
+            <!-- Icono -->
+            <svg class="w-12 h-12 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Práctica 3</h3>
+        <p class="text-gray-600 mb-4">Descripción breve del proyecto.</p>
+        <a href="https://sergiohurtadopozo.github.io/Practica-3/" target="_blank" class="text-primary hover:text-blue-800">Ver Proyecto</a>
+        </div>
+      </div>
+      <!-- Característica 3 -->
+      <div class="w-full md:w-1/3 px-6 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="mb-4">
+            <!-- Icono -->
+            <svg class="w-12 h-12 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Práctica 4</h3>
+          <p class="text-gray-600 mb-4">Descripción breve del proyecto.</p>
+          <a href="https://sergiohurtadopozo.github.io/Practica4/" target="_blank" class="text-primary hover:text-blue-800">Ver Proyecto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Grid de Imágenes -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800">Galería de Imágenes</h2>
+      <p class="text-gray-600 mt-4">Una muestra de nuestro trabajo.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Imagen 1 -->
+      <div class="overflow-hidden rounded-lg">
+        <img src="https://www.um.es/documents/1083928/29939081/informatica.jpg/3bd909e1-f4d5-5de0-430e-8ae4fd54e2ed" alt="Descripción de la imagen 1" class="w-full h-full object-cover">
+      </div>
+      <!-- Imagen 2 -->
+      <div class="overflow-hidden rounded-lg">
+        <img src="https://www.cesuma.mx/blog/wp-content/uploads/2023/05/b2ap3_large_Qu-es-la-informacin-en-informtica-y-otras-ciencias.png" alt="Descripción de la imagen 2" class="w-full h-full object-cover">
+      </div>
+      <!-- Imagen 3 -->
+      <div class="overflow-hidden rounded-lg">
+        <img src="https://media.istockphoto.com/id/1484313578/es/foto/red-de-ciberseguridad-concepto-de-privacidad-de-protecci%C3%B3n-de-datos.jpg?s=612x612&w=0&k=20&c=e7hAhKMEUP65SrhGNWwnvWlAreKse-8brqqGNDUVFqs=" alt="Descripción de la imagen 3" class="w-full h-full object-cover">
+      </div>
+      <!-- Imagen 4 -->
+      <div class="overflow-hidden rounded-lg">
+        <img src="https://media.istockphoto.com/id/1397085685/es/foto/estructura-de-datos-y-herramientas-de-informaci%C3%B3n-para-el-negocio-de-redes-y-la-seguridad.jpg?s=1024x1024&w=is&k=20&c=Wh7-eW1NjsRSFHwDmksFwAkAJhkmO1NjQPDhCS_K9_4=" alt="Descripción de la imagen 4" class="w-full h-full object-cover">
+      </div>
+      <!-- Puedes añadir más imágenes según sea necesario -->
+    </div>
+  </section>
+
+  <!-- Llamado a la Acción -->
+  <section class="bg-primary">
+    <div class="container mx-auto px-6 py-16 text-center text-white">
+      <h2 class="text-3xl font-bold mb-4">¿Listo para Comenzar?</h2>
+      <p class="mb-8">Únete a nosotros y lleva tu negocio al siguiente nivel.</p>
+      <a href="#" class="bg-secondary text-primary px-6 py-3 rounded-full hover:bg-yellow-300">Regístrate Ahora</a>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="bg-gray-800">
+    <div class="container mx-auto px-6 py-8 text-gray-400">
+      <div class="flex flex-col md:flex-row justify-between">
+        <p>&copy; 2024 MiEmpresa. Todos los derechos reservados.</p>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-white">Privacidad</a>
+          <a href="#" class="hover:text-white">Términos</a>
+          <a href="#" class="hover:text-white">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
